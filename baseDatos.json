@@ -3,72 +3,72 @@
         "precio": 5000,
         "id": 1,
         "title": "BARCELONA",
-        "thumbnailUrl": "https://picsum.photos/id/237/600"
-    },
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
+    }, 
     {
         "precio": 13000,
         "id": 2,
         "title": "PARIS",
-        "thumbnailUrl": "https://picsum.photos/id/0/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 20100,
         "id": 3,
         "title": "VENECIA",
-        "thumbnailUrl": "https://picsum.photos/id/1/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 10500,
         "id": 4,
         "title": "EDIMBURGO",
-        "thumbnailUrl": "https://picsum.photos/id/237/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 10000,
         "id": 5,
         "title": "SUECIA",
-        "thumbnailUrl": "https://picsum.photos/id/100/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 15000,
         "id": 6,
         "title": "MEXICO",
-        "thumbnailUrl": "https://picsum.photos/id/10/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 5000,
         "id": 7,
         "title": "PERU",
-        "thumbnailUrl": "https://picsum.photos/id/0/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 8000,
         "id": 8,
         "title": "VENEZUELA",
-        "thumbnailUrl": "https://picsum.photos/id/10/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 9000,
         "id": 9,
         "title": "DOMINICANA",
-        "thumbnailUrl": "https://picsum.photos/id/1074/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 16500,
         "id": 10,
         "title": "MADRID",
-        "thumbnailUrl": "https://picsum.photos/id/1059/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 3000,
         "id": 11,
         "title": "INDIA",
-        "thumbnailUrl": "https://picsum.photos/id/1062/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     },
     {
         "precio": 6000,
         "id": 12,
         "title": "PORTUGAL",
-        "thumbnailUrl": "https://picsum.photos/id/1044/600"
+        "thumbnailUrl": "images/shop/products/baby/girl-babie-girl500x600.png"
     }
 ]
