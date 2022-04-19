@@ -2725,4 +2725,4 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .card{text-align:center;}
 .card img{ width:80%; padding:1rem}
 .search a{color:transparent;}
-.top-nav .row{display:flex; align-items:center}
+.top-header .row{display:flex; align-items:center}
