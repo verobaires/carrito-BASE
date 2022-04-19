@@ -42,7 +42,6 @@ const completarProductos = (data) => {
 }
 
 
-
 let compra = {}
 
 const detectarBotones = (data) => {
