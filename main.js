@@ -8,7 +8,7 @@ if (localStorage.getItem('carrito')){
 
 
 })
-//tomo el JSON
+//tomo el JSON PARA WOMEN
 const cargarBaseDatos = async () => {
     try {
         const res = await fetch('baseDatos.json')
@@ -21,7 +21,33 @@ const cargarBaseDatos = async () => {
     }
 }
 
-const contendorProductos = document.querySelector('#contenedor-productos')
+//tomo el JSON PARA TEEN
+const cargarBaseDatosTeen = async () => {
+    try {
+        const res = await fetch('baseDatosTeen.json')
+        const data = await res.json()
+        console.log(data)
+        completarProductos(data)
+        detectarBotones(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+//tomo el JSON PARA GIRL
+const cargarBaseDatosGirl = async () => {
+    try {
+        const res = await fetch('baseDatosGirl.json')
+        const data = await res.json()
+        console.log(data)
+        completarProductos(data)
+        detectarBotones(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+/* WOMEN */
+const contenedorProductos = document.querySelector('#contenedor-productos')
 const completarProductos = (data) => {
     const template = document.querySelector('#template-productos').content
     const fragment = document.createDocumentFragment()
@@ -35,8 +61,44 @@ const completarProductos = (data) => {
         const clone = template.cloneNode(true)
         fragment.appendChild(clone)
     })
-    contendorProductos.appendChild(fragment)
+    contenedorProductos.appendChild(fragment)
 }
+
+/* TEEN */
+const contenedorProductosTeen = document.querySelector('#contenedor-productosTeen')
+const completarProductosTeen = (data) => {
+    const template = document.querySelector('#template-productos').content
+    const fragment = document.createDocumentFragment()
+ 
+    data.forEach(producto => {
+      
+        template.querySelector('img').setAttribute('src', producto.thumbnailUrl)
+        template.querySelector('h5').textContent = producto.title
+        template.querySelector('p span').textContent = producto.precio
+        template.querySelector('button').dataset.id = producto.id
+        const clone = template.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+    contenedorProductosTeen.appendChild(fragment)
+}
+/* GIRL */
+const contenedorProductosGirl = document.querySelector('#contenedor-productosGirl')
+const completarProductosGirl = (data) => {
+    const template = document.querySelector('#template-productos').content
+    const fragment = document.createDocumentFragment()
+ 
+    data.forEach(producto => {
+      
+        template.querySelector('img').setAttribute('src', producto.thumbnailUrl)
+        template.querySelector('h5').textContent = producto.title
+        template.querySelector('p span').textContent = producto.precio
+        template.querySelector('button').dataset.id = producto.id
+        const clone = template.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+    contenedorProductosGirl.appendChild(fragment)
+}
+
 
 let compra = {}
 
