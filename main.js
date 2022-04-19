@@ -69,7 +69,7 @@ const completarProductos = (data) => {
 /* TEEN */
 const contenedorProductosTeen = document.querySelector('#contenedor-productosTeen')
 const completarProductosTeen = (data) => {
-    const template = document.querySelector('#template-productos').content
+    const template = document.querySelector('#template-productosTeen').content
     const fragment = document.createDocumentFragment()
  
     data.forEach(producto => {
@@ -86,7 +86,7 @@ const completarProductosTeen = (data) => {
 /* GIRL */
 const contenedorProductosGirl = document.querySelector('#contenedor-productosGirl')
 const completarProductosGirl = (data) => {
-    const template = document.querySelector('#template-productos').content
+    const template = document.querySelector('#template-productosGirl').content
     const fragment = document.createDocumentFragment()
  
     data.forEach(producto => {
