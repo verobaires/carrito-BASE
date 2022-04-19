@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    cargarBaseDatos() //creo una funcion para cargar 
+    cargarBaseDatos() //creo una funcion para cargar women
+    cargarBaseDatosTeen() //creo una funcion para cargar teen
+    cargarBaseDatosGirl() //creo una funcion para cargar girl
 if (localStorage.getItem('carrito')){
     compra = JSON.parse(localStorage.getItem('carrito'))
     completarCarrito()
