@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     cargarBaseDatos() //creo una funcion para cargar women
-    cargarBaseDatosTeen() //creo una funcion para cargar teen
-    cargarBaseDatosGirl() //creo una funcion para cargar girl
+    
 if (localStorage.getItem('carrito')){
     compra = JSON.parse(localStorage.getItem('carrito'))
     completarCarrito()
@@ -23,31 +22,7 @@ const cargarBaseDatos = async () => {
     }
 }
 
-//tomo el JSON PARA TEEN
-const cargarBaseDatosTeen = async () => {
-    try {
-        const res = await fetch('baseDatosTeen.json')
-        const data = await res.json()
-        console.log(data)
-        completarProductos(data)
-        detectarBotones(data)
-    } catch (error) {
-        console.log(error)
-    }
-}
 
-//tomo el JSON PARA GIRL
-const cargarBaseDatosGirl = async () => {
-    try {
-        const res = await fetch('baseDatosGirl.json')
-        const data = await res.json()
-        console.log(data)
-        completarProductos(data)
-        detectarBotones(data)
-    } catch (error) {
-        console.log(error)
-    }
-}
 /* WOMEN */
 const contenedorProductos = document.querySelector('#contenedor-productos')
 const completarProductos = (data) => {
@@ -66,40 +41,6 @@ const completarProductos = (data) => {
     contenedorProductos.appendChild(fragment)
 }
 
-/* TEEN */
-const contenedorProductosTeen = document.querySelector('#contenedor-productosTeen')
-const completarProductosTeen = (data) => {
-    const template = document.querySelector('#template-productosTeen').content
-    const fragment = document.createDocumentFragment()
- 
-    data.forEach(producto => {
-      
-        template.querySelector('img').setAttribute('src', producto.thumbnailUrl)
-        template.querySelector('h5').textContent = producto.title
-        template.querySelector('p span').textContent = producto.precio
-        template.querySelector('button').dataset.id = producto.id
-        const clone = template.cloneNode(true)
-        fragment.appendChild(clone)
-    })
-    contenedorProductosTeen.appendChild(fragment)
-}
-/* GIRL */
-const contenedorProductosGirl = document.querySelector('#contenedor-productosGirl')
-const completarProductosGirl = (data) => {
-    const template = document.querySelector('#template-productosGirl').content
-    const fragment = document.createDocumentFragment()
- 
-    data.forEach(producto => {
-      
-        template.querySelector('img').setAttribute('src', producto.thumbnailUrl)
-        template.querySelector('h5').textContent = producto.title
-        template.querySelector('p span').textContent = producto.precio
-        template.querySelector('button').dataset.id = producto.id
-        const clone = template.cloneNode(true)
-        fragment.appendChild(clone)
-    })
-    contenedorProductosGirl.appendChild(fragment)
-}
 
 
 let compra = {}
